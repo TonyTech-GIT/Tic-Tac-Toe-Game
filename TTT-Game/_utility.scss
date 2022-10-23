@@ -1,0 +1,78 @@
+.border-right{
+    border-right: 3px solid #fff;
+}
+.border-bottom{
+    border-bottom: 3px solid #fff;
+}
+
+.x-hover:hover::before{
+    content: 'X';
+    opacity: 0.4;
+}
+.o-hover:hover::before{
+    content: 'O';
+    opacity: 0.4;
+}
+
+#strike{
+    position: absolute;
+    background-color: #f08080;
+}
+
+// Rows...
+
+.strike-row-1{
+    width: 100%;
+    height: 4px;
+    top: 15%;
+}
+.strike-row-2{
+    width: 100%;
+    height: 4px;
+    top: 48.5%;
+}
+.strike-row-3{
+    width: 100%;
+    height: 4px;
+    top: 83%;
+}
+
+// Columns...
+.strike-col-1{
+    height: 100%;
+    width: 4px;
+    left: 15.5%;
+}
+.strike-col-2{
+    height: 100%;
+    width: 4px;
+    left: 49%;
+}
+.strike-col-3{
+    height: 100%;
+    width: 4px;
+    left: 83%;
+}
+
+// Diagonals...
+.strike-diag-1{
+    width: 95%;
+    height: 4px;
+    top: 50%;
+    left: 4%;
+    transform: skewY(45deg);
+}
+.strike-diag-2{
+    width: 95%;
+    height: 4px;
+    top: 50%;
+    left: 1%;
+    transform: skewY(-45deg);
+}
+
+.hidden{
+    display: none;
+}
+.visible{
+    display: block;
+}
